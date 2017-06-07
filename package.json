@@ -1,0 +1,24 @@
+{
+  "name": "quick_register",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "directories": {
+    "example": "examples"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.1",
+    "faker": "^4.1.0",
+    "moment": "^2.18.1",
+    "mongoose": "^4.10.3",
+    "nodemailer": "^4.0.1",
+    "request": "^2.81.0",
+    "selenium-webdriver": "^3.4.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
