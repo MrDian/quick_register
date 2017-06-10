@@ -104,8 +104,8 @@ var promise = new Promise((resolve, reject) => {
 
 promise.then(result => {
 	driver = new webdriver.Builder()
-	    .forBrowser('chrome')
-	    // .forBrowser('firefox')
+	    // .forBrowser('chrome')
+	    .forBrowser('firefox')
 	    .build();
 	doAuto();
 });
@@ -125,6 +125,7 @@ var doAuto = function () {
 	driver.findElement(By.name('username')).sendKeys(register.username);
 	driver.findElement(By.name('password1')).sendKeys(register.password);
 	driver.findElement(By.name('register')).click();
+	console.log('>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>');
 	driver.getCurrentUrl().then(function(url) {
 		console.log(url);
     	if (/register-topics/.test(url)) {
