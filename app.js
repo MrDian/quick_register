@@ -119,6 +119,9 @@ var doAuto = function () {
 		password: faker.internet.password()
 	});
 	driver.get('https://www.safaribooksonline.com/register');
+	console.log('--------------------->>>');
+	console.log(By.name('first_name'));
+	console.log(register.firstName);
 	driver.findElement(By.name('first_name')).sendKeys(register.firstName);
 	driver.findElement(By.name('last_name')).sendKeys(register.lastName);
 	driver.findElement(By.name('email')).sendKeys(register.email);
