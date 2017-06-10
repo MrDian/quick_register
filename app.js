@@ -120,14 +120,13 @@ var doAuto = function () {
 	});
 	driver.get('https://www.safaribooksonline.com/register');
 	console.log('--------------------->>>');
-	console.log(By.name('first_name'));
-	console.log(register.firstName);
 	driver.findElement(By.name('first_name')).sendKeys(register.firstName);
 	driver.findElement(By.name('last_name')).sendKeys(register.lastName);
 	driver.findElement(By.name('email')).sendKeys(register.email);
 	driver.findElement(By.name('username')).sendKeys(register.username);
 	driver.findElement(By.name('password1')).sendKeys(register.password);
 	driver.findElement(By.name('register')).click();
+	console.log('---------------------<<<<');
 	driver.getCurrentUrl().then(function(url) {
 		console.log(url);
     	if (/register-topics/.test(url)) {
