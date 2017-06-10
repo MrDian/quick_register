@@ -104,8 +104,8 @@ var promise = new Promise((resolve, reject) => {
 
 promise.then(result => {
 	driver = new webdriver.Builder()
-	    .forBrowser('chrome')
-	    // .forBrowser('firefox')
+	    // .forBrowser('chrome')
+	    .forBrowser('firefox')
 	    .build();
 	doAuto();
 });
